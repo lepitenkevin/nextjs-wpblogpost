@@ -1,101 +1,83 @@
-import Image from "next/image";
+// app/page.tsx
+
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <section className="resume-section" id="about">
+        <div className="resume-section-content">
+          <h1 className="mb-0">
+            Kevin Victor <span className="text-primary">Lepiten</span>
+          </h1>
+          <div className="subheading mb-5">
+            Libertad, Bogo City, Cebu 6010 · (+63) 915 518 1798 ·
+            <Link href="mailto:lepitenkevin@gmail.com">
+              lepitenkevin@gmail.com
+            </Link>
+            <br />
+            Skype: lepitenkevin
+          </div>
+          <h3>Hire Me!</h3>
+          <Link href="tel:+639155181798" className="btn btn-secondary">
+            Call Now! (+63) 915 518 1798
+          </Link>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <p className="lead mb-5 mt-4">
+            As a Full Stack Developer with over 12 years of experience, I
+            specialize in creating dynamic and user-friendly websites for a
+            diverse range of industries. My expertise spans from custom theme
+            development and plugin customization to full-stack system
+            integration and performance optimization. I am proficient in PHP,
+            JavaScript, HTML5, CSS3, and am experienced with modern web
+            technologies. I also have skills in using SQL and NoSQL databases,
+            ensuring robust backend solutions. My approach combines technical
+            skill with a keen aesthetic sense to deliver functional and visually
+            compelling WordPress sites. I pride myself on my ability to
+            translate client needs into seamless, scalable web solutions that
+            enhance user engagement and drive business success.
+          </p>
+
+          <div className="social-icons">
+            <Link
+              href="https://www.linkedin.com/in/kevinlepiten/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </Link>
+            <Link
+              href="https://github.com/lepitenkevin/"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i className="fab fa-github"></i>
+            </Link>
+            <Link
+              href="https://www.youtube.com/c/VMankevofficial/"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i className="fab fa-youtube"></i>
+            </Link>
+            <Link
+              href="https://www.facebook.com/varcharnamekevin/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </Link>
+            <Link
+              href="https://www.onlinejobs.ph/jobseekers/info/425554"
+              target="_blank"
+              aria-label="OnlineJobs.ph"
+            >
+              <i className="fa-brands fa-whmcs"></i>
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <hr className="m-0" />
+    </>
   );
 }
