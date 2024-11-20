@@ -4,5 +4,9 @@
     "@typescript-eslint/no-explicit-any": "off", // Disable rule for 'any'
     "no-unused-vars": "off", // Disable unused variable warnings
     "no-console": "off" // Disable console warnings
+  },
+  "globals": {
+    "ScrollSpy": "readonly"
   }
+
 }

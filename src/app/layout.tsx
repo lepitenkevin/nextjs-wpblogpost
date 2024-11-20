@@ -19,17 +19,31 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=optional"
+          href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
           rel="stylesheet"
           type="text/css"
         />
         <link
-          href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=optional"
+          href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
           rel="stylesheet"
           type="text/css"
         />
+
         <script
           src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+          data-auto-replace-svg="true"
+          defer
+        ></script>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          data-auto-replace-svg="true"
+          defer
+        ></script>
+
+        <script
+          src="./js/scripts.js"
+          data-auto-replace-svg="true"
           defer
         ></script>
       </head>

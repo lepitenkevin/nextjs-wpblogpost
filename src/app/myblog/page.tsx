@@ -29,10 +29,10 @@ function decodeHTML(html: string): string {
     .replace(/&gt;/g, ">");
 }
 
-// Fetch posts with the Next.js fetch API
-async function getPosts(): Promise<Post[]> {
+// Fetch posts with pagination
+async function getPosts(page: number, perPage: number): Promise<Post[]> {
   const res = await fetch(
-    "https://kevinlepiten.com/blog/wp-json/wp/v2/posts?_embed"
+    `https://kevinlepiten.com/blog/wp-json/wp/v2/posts?_embed&page=${page}&per_page=${perPage}`
   );
 
   if (!res.ok) {
@@ -49,7 +49,11 @@ const PostTitle: React.FC<{ title: string }> = ({ title }) => <h2>{title}</h2>;
 const PostLink: React.FC<{ id: number; children: React.ReactNode }> = ({
   id,
   children,
-}) => <Link href={`/myblog/${id}`}>{children}</Link>;
+}) => (
+  <Link href={`/myblog/${id}`} className="text-xxs">
+    {children}
+  </Link>
+);
 
 // Component to render the post's featured image
 const PostFeaturedImage: React.FC<{ src: string | undefined; alt: string }> = ({
@@ -69,18 +73,28 @@ const PostItem: React.FC<{ post: Post }> = ({ post }) => {
   const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
 
   return (
-    <li key={post.id}>
-      <PostFeaturedImage src={featuredImage} alt={title} />
-      <PostLink id={post.id}>
-        <PostTitle title={title} />
-      </PostLink>
-    </li>
+    <>
+      <li key={post.id}>
+        <PostFeaturedImage src={featuredImage} alt={title} />
+        <PostLink id={post.id}>
+          <PostTitle title={title} />
+        </PostLink>
+        <PostLink id={post.id}>Read More</PostLink>
+      </li>
+      <br />
+    </>
   );
 };
 
-// Main page component that displays the list of posts
-export default async function Posts() {
-  const posts = await getPosts();
+// Main page component with pagination
+export default async function Posts({
+  getStaticProps,
+}: {
+  getStaticProps: { page?: string };
+}) {
+  const currentPage = parseInt((await getStaticProps)?.page || "1", 10);
+  const postsPerPage = 3; // Number of posts per page
+  const posts = await getPosts(currentPage, postsPerPage);
 
   return (
     <>
@@ -92,6 +106,18 @@ export default async function Posts() {
               <PostItem key={post.id} post={post} />
             ))}
           </ul>
+
+          {/* Pagination Controls */}
+          <div className="pagination">
+            {currentPage > 1 && (
+              <Link className="prev" href={`/myblog?page=${currentPage - 1}`}>
+                Prev
+              </Link>
+            )}
+            <Link className="next" href={`/myblog?page=${currentPage + 1}`}>
+              Next
+            </Link>
+          </div>
         </div>
       </section>
     </>

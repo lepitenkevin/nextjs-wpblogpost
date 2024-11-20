@@ -65,23 +65,23 @@ export default function Skills() {
             <span className="fa-li">
               <i className="fas fa-check"></i>
             </span>
-            AWS Cloud, Aws S3, Lightsail, Linux, CloudShel, PowerShell, Node.js
+            AWS Cloud, Aws S3, Lightsail, Linux, CloudShel, PowerShell, Node Js,
+            Docker, Git Bash
           </li>
           <li>
             <span className="fa-li">
               <i className="fas fa-check"></i>
             </span>
             PHP, React.js, JS, HTML, CSS3, Bootstrap, Laravel, GraphQL, RESTful
-            API
+            API, Next Js, Tailwind CSS
           </li>
           <li>
             <span className="fa-li">
               <i className="fas fa-check"></i>
             </span>
-            Adobe Photoshop, Filmora 9, Canva
+            Adobe Photoshop, Filmora 9, Canva, Figma
           </li>
           <li>
-            s
             <span className="fa-li">
               <i className="fas fa-check"></i>
             </span>
@@ -105,8 +105,8 @@ export default function Skills() {
             <span className="fa-li">
               <i className="fas fa-check"></i>
             </span>
-            Woocommerce, Wordpress, WP Elementor, Elementor Pro, WP-rocket, Wix,
-            Divi, Squarespace, Snapps.ai
+            Headless CMS, Woocommerce, Wordpress, WP Elementor, Elementor Pro,
+            WP-rocket, Wix, Divi, Squarespace, Snapps.ai
           </li>
           <li>
             <span className="fa-li">

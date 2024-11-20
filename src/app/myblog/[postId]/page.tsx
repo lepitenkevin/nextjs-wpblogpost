@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 }
 interface PostPageProps {
   params: {
-    postId: string;
+    postId?: string;
   };
 }
 
@@ -30,7 +30,7 @@ function decodeHTML(html: string): string {
 }
 
 export default async function PostPage({ params }: PostPageProps) {
-  const { postId } = params;
+  const { postId } = await params;
   const res = await fetch(
     `https://kevinlepiten.com/blog/wp-json/wp/v2/posts/${postId}?_embed`
   );
@@ -48,9 +48,8 @@ export default async function PostPage({ params }: PostPageProps) {
   const featuredImage =
     post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || null;
   const categories =
-    post._embedded?.["wp:term"]?.[0]
-      ?.map((term: string) => term.name)
-      .join(", ") || "Uncategorized";
+    post._embedded?.["wp:term"]?.[0]?.map((term: string) => term).join(", ") ||
+    "Uncategorized";
 
   return (
     <section className="resume-section">
