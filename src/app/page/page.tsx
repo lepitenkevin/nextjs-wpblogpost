@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic"; // Allow dynamic rendering
+// Allow dynamic rendering
 
 export default async function PagesList() {
   const response = await fetch(
