@@ -24,18 +24,14 @@ export default function Home() {
           </Link>
 
           <p className="lead mb-5 mt-4">
-            As a Full Stack Developer with over 12 years of experience, I
-            specialize in creating dynamic and user-friendly websites for a
-            diverse range of industries. My expertise spans from custom theme
-            development and plugin customization to full-stack system
-            integration and performance optimization. I am proficient in PHP,
-            JavaScript, HTML5, CSS3, and am experienced with modern web
-            technologies. I also have skills in using SQL and NoSQL databases,
-            ensuring robust backend solutions. My approach combines technical
-            skill with a keen aesthetic sense to deliver functional and visually
-            compelling WordPress sites. I pride myself on my ability to
-            translate client needs into seamless, scalable web solutions that
-            enhance user engagement and drive business success.
+            Full Stack Developer with 12+ years of experience, I specialize in
+            building dynamic, user-friendly web applications across various
+            industries. My expertise includes custom themes, plugin development,
+            full-stack integration, and performance optimization. Proficient in
+            PHP, JavaScript, C#, HTML5, CSS3, jQuery, RESTful APIs, and SQL, I
+            deliver scalable, visually appealing WordPress solutions that
+            enhance engagement and drive results, from small business sites to
+            large e-commerce platforms.
           </p>
 
           <div className="social-icons">

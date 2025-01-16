@@ -43,7 +43,25 @@ export default function Skills() {
               <span className="fa-li">
                 <i className="fas fa-check"></i>
               </span>
-              Mobile-First, Responsive Design
+              DevOps approach
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fas fa-check"></i>
+              </span>
+              Netsuite ERP
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fas fa-check"></i>
+              </span>
+              Podio
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fas fa-check"></i>
+              </span>
+              Monday.com
             </li>
             <li>
               <span className="fa-li">
@@ -66,7 +84,7 @@ export default function Skills() {
               <i className="fas fa-check"></i>
             </span>
             AWS Cloud, Aws S3, Lightsail, Linux, CloudShel, PowerShell, Node Js,
-            Docker, Git Bash
+            Docker, Git Bash, Git, Python
           </li>
           <li>
             <span className="fa-li">
@@ -106,7 +124,8 @@ export default function Skills() {
               <i className="fas fa-check"></i>
             </span>
             Headless CMS, Woocommerce, Wordpress, WP Elementor, Elementor Pro,
-            WP-rocket, Wix, Divi, Squarespace, Snapps.ai
+            WP-rocket, Wix, Divi, Squarespace, Snapps.ai. CRM, Netsuite ERP,
+            SuiteScript
           </li>
           <li>
             <span className="fa-li">

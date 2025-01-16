@@ -12,14 +12,24 @@ export default function Experience() {
                 <li>Setup Websites in Cpanel</li>
                 <li>Migrate client websites in to the company server</li>
                 <li>
-                  Maintaining cloud base system in AWS(LightSail, S3, EC2)
+                  Maintaining our cloud base server in AWS(LightSail, S3, EC2)
                 </li>
                 <li>Converting Figma Web Design to Wordpress Website</li>
-                <li>Troubleshooting Website errors</li>
+                <li>Maintain code in Github account</li>
+                <li>Troubleshooting Web App errors</li>
                 <li>Website Content Update</li>
                 <li>
-                  Designed and developed Website using Elementor, Squarespace
+                  Implement headless CMS using nextjs for frontend and strapi &
+                  wordpress for backend
                 </li>
+                <li>
+                  Designed and developed Website using Elementor, Squarespace,
+                  Duda, Wix
+                </li>
+                <li>
+                  Update Client Suitescripts and Workflows on their netsuite ERP
+                </li>
+                <li>Setup Client CRM's</li>
                 <li>Update Project Status in Monday.com</li>
               </ul>
             </div>
@@ -65,6 +75,9 @@ export default function Experience() {
                 </li>
                 <li>Maintaining cloud base system in AWS LightSail, S3, EC2</li>
                 <li>Manage Company Owned Hosting Servers</li>
+                <li>
+                  Maintaining company Workflow and Suitescript in Netsuite ERP
+                </li>
                 <li>Setting up Domain DNS and Nameservers</li>
                 <li>Troubleshoot Website errors</li>
                 <li>Optimized Website Sitespeed using Pagespeed insight</li>

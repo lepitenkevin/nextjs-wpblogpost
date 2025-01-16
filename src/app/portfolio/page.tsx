@@ -11,8 +11,32 @@ export default function Portfolio() {
               <span className="fa-li">
                 <i className="fas "></i>
               </span>
-              <Link href="/myblog" target="_blank" rel="nofollow">
+              <Link href="/myblog" rel="nofollow">
                 My Blog
+              </Link>
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fas "></i>
+              </span>
+              <Link
+                href="https://ketchen-next-1wlnfcqbv-lepitenkevins-projects.vercel.app/"
+                target="_blank"
+                rel="nofollow"
+              >
+                Kitchen
+              </Link>
+            </li>
+            <li>
+              <span className="fa-li">
+                <i className="fas "></i>
+              </span>
+              <Link
+                href="https://github.com/lepitenkevin/Dynamic-Featured-Image-CSS"
+                target="_blank"
+                rel="nofollow"
+              >
+                Dynamic Featured Image (Wordpress Plugin)
               </Link>
             </li>
             <li>
@@ -388,6 +412,21 @@ export default function Portfolio() {
                 rel="nofollow"
               >
                 Preferred Direct Family Care Medical Clinic
+              </Link>
+            </li>
+          </ul>
+          <h3>Duda</h3>
+          <ul className="fa-ul mb-0">
+            <li>
+              <span className="fa-li">
+                <i className="fas "></i>
+              </span>
+              <Link
+                href="https://www.josejunkhauling.com/"
+                target="_blank"
+                rel="nofollow"
+              >
+                Jose’s Hauling &amp; Junk Removal Services
               </Link>
             </li>
           </ul>
