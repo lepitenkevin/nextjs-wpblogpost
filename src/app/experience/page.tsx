@@ -29,7 +29,7 @@ export default function Experience() {
                 <li>
                   Update Client Suitescripts and Workflows on their netsuite ERP
                 </li>
-                <li>Setup Client CRM's</li>
+                <li>Setup Client CRM&#8217;s</li>
                 <li>Update Project Status in Monday.com</li>
               </ul>
             </div>
